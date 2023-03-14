@@ -47,6 +47,7 @@ if(isset($_POST['observacoes'])){$observacoes=filter_input(INPUT_POST,'observaco
 if(isset($_POST['data'])){$data=filter_input(INPUT_POST,'data',FILTER_DEFAULT);}else{$data=null;}
 if(isset($_POST['idEdit'])){$idEdit=filter_input(INPUT_POST,'idEdit',FILTER_DEFAULT);}else{$idEdit=null;}
 if(isset($_POST['id'])){$id=filter_input(INPUT_POST,'id',FILTER_DEFAULT);}else{$id=null;}
+if(isset($_POST['newPass'])){$newPass=filter_input(INPUT_POST,'newPass',FILTER_DEFAULT);}else{$newPass=null;}
 
 $arr=[
     "listCategoria"=>$listCategoria,

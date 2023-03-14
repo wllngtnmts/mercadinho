@@ -256,7 +256,7 @@ class ClassValidate{
         $user=$this->login->getDataUser($email);
         if($user["data"]["status"] == 'confirmation'){
             if (strtotime($user["data"]["createdAt"]) <= strtotime(date("Y-m-d H:i:s"))-432000){
-                $this->setErro("Contate wellington.matos@sistemasesoftware.com.br ou reset sua senha!");
+                $this->setErro("Ativar conta, contate 94 98805-6755 ou reset sua senha!");
                 return false;
             }else{
                 return true;
