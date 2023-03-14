@@ -1,0 +1,142 @@
+/*Sistema*/
+*{ margin: 0; padding: 0; box-sizing: border-box; font-family: "Helvetica Neue", IBM Plex Mono,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;}
+
+a{ text-decoration: none; color: #333;}
+
+/*Casses auxiliares*/
+.inlineBlock{display: inline-block;}
+.float{float: left;}
+.w100{width: 100%}
+.h40{height: 40px;}
+.center{text-align: center;}
+.font{font-size: 18px;}
+.modeloInputBox{margin-bottom: 10px; padding-left: 10px; height: 30px; width: 100%; border-radius: 5px; padding-left: 10px; margin-bottom: 5px;}
+.inputDate{margin-bottom: 10px!important; padding-left: 10px!important; height: 27px!important; width: 100%!important; border-radius: 5px!important; padding-left: 10px!important; margin-bottom: 15px!important;}
+
+/*Configurações gerais midia queri*/
+input[type="email"],input[type='password'],input[type="text"],input[type="date"]{margin: 10px 0;border: 1px solid #bbb;border-radius: 2px;font-size: 16px; padding: 0 15px; width: 100%; height: 30px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;color: #666;}
+input[type="text"],input[type="date"]{margin: 10px 0;border: 1px solid #bbb;border-radius: 2px;font-size: 14px;padding: 0 10px; width: 100%; height: 30px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;color: #666; grid-template-columns: 30% 30% 30%;}
+input[type="submit"]{float: right;width: 30%; margin-top: 15px; background: #025158;font-weight: bold;color: #ffffff;border: none;border-radius: 2px;cursor: pointer;}
+input[type="submit"]:hover{opacity: 0.8;}
+.fundoLog{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.login{position: absolute;width: 25%;top: 50%;left: 50%; max-width: 550px; margin-right: -50%;transform: translate(-50%, -50%);background: #fff;padding: 30px;border-radius: 2px;}
+.loginTextos{width:  60%;font-weight: bold;line-height: 40px; margin-top: 15px;}
+.cadastro{width: 50%; margin: 0 auto; background: #fff; padding: 30px; border-radius: 2px;}
+.tituloCadastro{position: relative;background-color: #025158; font-size: 25px; height: 50px; line-height: 50px;}
+.tituloCadastro h1{font-size: 24px; color: white;}
+.logomarcaimg{width: 100%; text-align: center;}
+.title01 , .title02{margin-bottom: 10px; margin-top: 10px; width: 100%; text-align: center;}
+.resultadoFormLogin{margin-top: 10px; font-weight: bold; color: red; line-height: 15px;}
+.success{width: 100%; padding: 10px 5%; background: #00ffaf; border-radius: 5px; text-align: center; font-weight: bold;}
+.error{width: 100%; padding: 10px 5%; background: #ffad86; border-radius: 5px; text-align: center; font-weight: bold;}
+
+.hierLabel{text-align: left!important; font-size: 14px!important;}
+.hier-cadastro-form, .hier-cadastro-formsecond label{text-align: left!important; font-size: 14px!important;}
+.hier-cadastro-form, .hier-cadastro-formsecond input{width: 100%!important; border-radius: 5px!important;margin-bottom: 5px!important;}
+
+.hier-cadastro {display: grid;background: #bbb;padding: 30px;border-radius: 2px;}
+.hier-cadastro-imagem{margin-bottom: 10px;}
+.hier-cadastro-imagem img{max-width: 60%;cursor:pointer;}
+.hier-cadastro-imagem input[type='file']{display:none;}
+.hier-cadastro-form{position: relative;}
+.hier-cadastro input[type='text']{padding: 0 10px!important;}
+.hier-cadastro-formsecond{margin-top: 15px;}
+
+
+
+/*Somente o que muda nas resoluções*/
+/*Extra-small*/
+@media screen and (max-width: 480px){
+    input[type="submit"]{width: 60%; font-size: 18px; margin: 30px 20%; height: 50px; cursor: pointer; background: #05546b; color:#fff; font-weight: bold; border: none; }
+    .fundoLog{background: url('/mercadinho/img/imgLogin_L.png') center center no-repeat;background-size: cover;}
+    .login{width: 90%;top: 40%;}
+    .loginTextos{width:  100%;margin-top: 15px;}
+    .login-work{display:inline-block; font-size: 12px; margin-top: 20px;}
+    .cadastro{width: 95%;}
+
+    .hierLabel{text-align: left!important; font-size: 14px!important;}
+    .hier-cadastro-form, .hier-cadastro-formsecond label{text-align: left!important; font-size: 14px!important;}
+    .hier-cadastro-form, .hier-cadastro-formsecond input{width: 100%!important; border-radius: 5px!important;margin-bottom: 5px!important;}
+
+    .hier-cadastro {display: grid;background: #bbb;padding: 30px;border-radius: 2px;}
+    .hier-cadastro-imagem{margin-bottom: 10px;}
+    .hier-cadastro-imagem img{max-width: 60%;cursor:pointer;}
+    .hier-cadastro-imagem input[type='file']{display:none;}
+    .hier-cadastro-form{position: relative;}
+    .hier-cadastro input[type='text']{padding: 0 10px!important;}
+    .hier-cadastro-formsecond{margin-top: 15px;}
+}
+
+
+/*Small*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    input[type='submit']{width: 100%;margin-top: 15px;}
+    .fundoLog{background: url('/mercadinho/img/imgLogin_L.png') center center no-repeat;background-size: cover}
+    .login{width: 60%;top: 40%;}
+    .loginTextos{margin-top: 15px;}
+    .login-work{font-size: 12px; width: 40%; margin-left: 60%; text-align: center;}
+
+    .hier-cadastro {display: grid;background: #bbb;padding: 30px;border-radius: 2px;}
+    .hier-cadastro-imagem{margin-bottom: 10px;height: 200px;}
+    .hier-cadastro-imagem img{max-width: 100%;cursor:pointer; }
+    .hier-cadastro-imagem input[type='file']{display:none;}
+    .hier-cadastro-form{display: grid; border: 1px;}
+    .hier-cadastro input[type='text']{padding: 0 10px!important;}
+    .hier-cadastro-formsecond{margin-top: 15px;}
+
+
+}
+
+
+
+/*Medium*/
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+    input[type='submit']{float: right;width: 40%;}
+    .fundoLog{background: url('/mercadinho/img/imgLogin_L.png') center center no-repeat;background-size: cover;}
+    .login{position: absolute;width: 50%;top: 45%; max-width: 550px;}
+    .login-work{font-size: 12px; width: 40%; margin-left: 60%; text-align: center;}
+
+    .hier-cadastro {display: grid;background: #bbb;padding: 30px;border-radius: 2px;grid-template-columns: 30% 70% 30% 70%;grid-template-areas: "aimagem aform" "aformsecond aformsecond";}
+    .hier-cadastro-imagem{grid-area: aimagem;height: 200px;}
+    .hier-cadastro-imagem img{max-width: 100%;cursor:pointer; max-height: 205px;}
+    .hier-cadastro-imagem input[type='file']{display:none;}
+    .hier-cadastro-form{grid-area: aform; display: grid; padding-left: 10px; border: 1px;}
+    .hier-cadastro input[type='text']{padding: 0 10px!important;}
+    .hier-cadastro-formsecond{grid-area: aformsecond; margin-top: 15px;}
+}
+
+
+
+/*High*/
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+    input[type='submit']{float: right;width: 40%;}
+    .fundoLog{background: url('/mercadinho/img/imgLogin_L.png') center center no-repeat;background-size: cover;}
+    .login{position: absolute;width: 50%;top: 45%; max-width: 550px;}
+    .login-work{font-size: 12px; width: 40%; margin-left: 60%; text-align: center;}
+
+    .hier-cadastro {display: grid;background:#bbb;padding: 30px;border-radius: 2px;grid-template-columns: 30% 70% 30% 70%;grid-template-areas: "aimagem aform" "aformsecond aformsecond";}
+    .hier-cadastro-imagem{grid-area: aimagem; height: 200px;}
+    .hier-cadastro-imagem img{max-width: 100%;cursor:pointer; max-height: 205px;}
+    .hier-cadastro-imagem input[type='file']{display:none;}
+    .hier-cadastro-form{grid-area: aform; display: grid; padding-left: 10px; border: 1px;}
+    .hier-cadastro input[type='text']{padding: 0 10px!important;}
+    .hier-cadastro-formsecond{grid-area: aformsecond; margin-top: 15px;}
+}
+
+
+
+
+/*Wide 4k*/
+@media screen and (min-width: 1921px) {
+    .fundoLog{background: url('/mercadinho/img/imgLogin_L.png') center center no-repeat;background-size: cover;}
+    .login{position: absolute;width: 25%; top: 45%; max-width: 550px;}
+    .login-work{font-size: 12px; width: 40%; margin-left: 60%; text-align: center;}
+
+    .hier-cadastro {display: grid;background: #bbb;padding: 30px;border-radius: 2px;grid-template-columns: 20% 80% 20% 80%;grid-template-areas: "aimagem aform" "aformsecond aformsecond";}
+    .hier-cadastro-imagem{grid-area: aimagem; padding: 15px; height: 200px;}
+    .hier-cadastro-imagem img{max-width: 100%;cursor:pointer;}
+    .hier-cadastro-imagem input[type='file']{display:none;}
+    .hier-cadastro-form{grid-area: aform; display: grid; align-items: center;}
+    .hier-cadastro input[type='text']{padding: 0 10px!important;}
+    .hier-cadastro-formsecond{grid-area: aformsecond; margin-top: 15px;}
+}

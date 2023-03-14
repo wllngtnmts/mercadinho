@@ -1,0 +1,23 @@
+{
+    "name": "login/sys",
+    "description": "cadastro de login php.",
+    "authors": [
+        {
+            "name": "wmatos",
+            "email": "wllngtnmts@gmail.com"
+        }
+    ],
+    "require": {
+        "bjeavons/zxcvbn-php": "^1.0",
+        "phpmailer/phpmailer": "^6.1",
+        "cocur/slugify": "^4.1",
+        "phpoffice/phpspreadsheet": "^1.22"
+    },
+    "autoload": {
+        "psr-4": {
+            "Classes\\":"../classes/",
+            "Models\\":"../models/",
+            "Traits\\":"../traits/"
+        }
+    }
+}
