@@ -17,7 +17,7 @@ class ClassCadastro extends ClassCrud
                 $arrVar['dataNascimento'],
                 $arrVar['cpf'],
                 $arrVar['matricula'],
-                'inert',
+                'comprador',
                 'confirmation',
                 $arrVar['dataCreate'],
                 $arrVar['dataCreate']
