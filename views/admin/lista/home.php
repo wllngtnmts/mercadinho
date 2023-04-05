@@ -17,7 +17,7 @@
                         <th>PRODUTO</th>
                         <th>PREFERÊNCIA</th>
                         <th>MEDIDA UNITÁRIA</th>
-                        <th>PREÇO</th>
+                        <th>CUSTO</th>
                         <th>REGISTRADO EM</th>
                         <th>ATUALIZADO EM</th>
                         <th>CATEGORIA</th>

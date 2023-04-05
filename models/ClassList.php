@@ -73,7 +73,7 @@ class ClassList extends ClassCrud
         $b=$this->selectDB(
             "*",
             "sis_produto",
-            "where idsis_categoriaProduto=?",
+            "where idsis_categoriaProduto=? order by sis_listaProduto asc",
             array(
                 $idProduto
             )
