@@ -21,21 +21,25 @@
 
                 <div>
                     <select name="lisCadProduto" id="lisCadProdutoEdit">
-                        <option value="%">PRODUTO</option>
+                        <option value="">PRODUTO</option>
                     </select>
                 </div>
 
+                <select name="listCadPesoPeca" id="listCadPesoPecaEdit">
+                    <option value="UNIDADE">UNIDADE</option>
+                    <option value="PESO">PESO</option>
+                </select>
+
                 <div>
-                    <select name="listCadQuantidade" id="listCadQuantidadeEdit" required>
-                        <option value="">QUANTIDADE</option>
-                        <?php for($i=1; $i <= 10; $i++){ ?>
-                            <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
-                        <?php } ?>
-                    </select>
+                    <input type="text" name="listCadQuantidade" id="listCadQuantidadeEdit" placeholder="Quantidade">
                 </div>
 
                 <div>
-                    <input type="text" name="listCadPrice" id="listCadPriceEdit" PLACEHOLDER="8.99">
+                    <input type="text" name="listCadPriceUnit" id="listCadPriceUnitEdit" placeholder="Valor unitário">
+                </div>
+
+                <div>
+                    <input type="text" name="listCadPrice" id="listCadPriceEdit" PLACEHOLDER="Valor total">
                 </div>
 
                 <select name="listCadStatus" id="listCadStatusEdit">

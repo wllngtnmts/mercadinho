@@ -34,7 +34,7 @@
                 </div>
 
                 <div>
-                    <input type="text" id="listCadPriceUnit" name="listCadPriceUnit" placeholder="Valor unitário">
+                    <input type="text" name="listCadPriceUnit" id="listCadPriceUnit" placeholder="Valor unitário">
                 </div>
 
                 <div>
