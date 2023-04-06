@@ -15,7 +15,7 @@
 ```
     git remote add origin URL_DO_SEU_DIRETÓRIO_ONLINE    
 ```
-> Ex: git remote add origin https://github.com/wllngtnmts/suporte.opt.cks
+> Ex: git remote add origin https://github.com/wllngtnmts/mercadinho
 
 
 5. Criar a branch principal
