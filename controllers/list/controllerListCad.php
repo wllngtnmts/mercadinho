@@ -1,16 +1,17 @@
 <?php
 $objList=new \Classes\ClassLists();
 $data=new DateTime('now',new DateTimeZone('America/Sao_Paulo'));
-
+$listCadPrice1 = str_replace(",",".", $listCadPrice);
+$listCadPriceUnit1 = str_replace(",",".", $listCadPriceUnit);
 $arrayList['startdata']=$data->format("Y-m-d H:i:s");
 $arrayList['enddata']=$data->format("Y-m-d H:i:s");
 $arrayList['listCadCategoria']=$listCadCategoria;
 $arrayList['lisCadProduto']=$lisCadProduto;
 $arrayList['listCadQuantidade']=$listCadQuantidade;
-$arrayList['listCadPrice']=$listCadPrice;
+$arrayList['listCadPrice']=$listCadPrice1;
 $arrayList['listCadStatus']=$listCadStatus;
 $arrayList['observacoes']=$observacoes;
-$arrayList['listCadPriceUnit']=$listCadPriceUnit;
+$arrayList['listCadPriceUnit']=$listCadPriceUnit1;
 $arrayList['listCadPesoPeca']=$listCadPesoPeca;
 
 $objList->createListCad($arrayList);
