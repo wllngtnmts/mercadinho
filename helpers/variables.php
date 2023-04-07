@@ -48,6 +48,8 @@ if(isset($_POST['data'])){$data=filter_input(INPUT_POST,'data',FILTER_DEFAULT);}
 if(isset($_POST['idEdit'])){$idEdit=filter_input(INPUT_POST,'idEdit',FILTER_DEFAULT);}else{$idEdit=null;}
 if(isset($_POST['id'])){$id=filter_input(INPUT_POST,'id',FILTER_DEFAULT);}else{$id=null;}
 if(isset($_POST['newPass'])){$newPass=filter_input(INPUT_POST,'newPass',FILTER_DEFAULT);}else{$newPass=null;}
+if(isset($_POST['listCadPriceUnit'])){$listCadPriceUnit=filter_input(INPUT_POST,'listCadPriceUnit',FILTER_DEFAULT);}else{$listCadPriceUnit=null;}
+if(isset($_POST['listCadPesoPeca'])){$listCadPesoPeca=filter_input(INPUT_POST,'listCadPesoPeca',FILTER_DEFAULT);}else{$listCadPesoPeca=null;}
 
 $arr=[
     "listCategoria"=>$listCategoria,

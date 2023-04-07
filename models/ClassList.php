@@ -97,7 +97,8 @@ class ClassList extends ClassCrud
                 $arrayList['lisCadProduto'],
                 $arrayList['listCadStatus'],
                 $arrayList['listCadCategoria'],
-
+                $arrayList['listCadPesoPeca'],
+                $arrayList['listCadPriceUnit']
             )
         );
     }
@@ -189,7 +190,9 @@ class ClassList extends ClassCrud
             sis_listaObs=?,
             sis_lista_idsis_lista=?,
             sis_listaStatus=?,
-            catProduct=?",
+            catProduct=?,
+            sis_listaValorUnit=?,
+            sis_listaPesoUnit=?",
             'idsis_list=?',
             array(
                 $arrayListEdit['listCadPrice'],
@@ -198,6 +201,8 @@ class ClassList extends ClassCrud
                 $arrayListEdit['lisCadProduto'],
                 $arrayListEdit['listCadStatus'],
                 $arrayListEdit['listCadCategoria'],
+                $arrayListEdit['listCadPriceUnit'],
+                $arrayListEdit['listCadPesoPeca'],
                 $arrayListEdit['idEdit']
             )
         );

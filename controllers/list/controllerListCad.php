@@ -10,6 +10,8 @@ $arrayList['listCadQuantidade']=$listCadQuantidade;
 $arrayList['listCadPrice']=$listCadPrice;
 $arrayList['listCadStatus']=$listCadStatus;
 $arrayList['observacoes']=$observacoes;
+$arrayList['listCadPriceUnit']=$listCadPriceUnit;
+$arrayList['listCadPesoPeca']=$listCadPesoPeca;
 
 $objList->createListCad($arrayList);
 echo "<script>
