@@ -13,8 +13,8 @@ $arrayList['listCadStatus']=$listCadStatus;
 $arrayList['observacoes']=$observacoes;
 $arrayList['listCadPriceUnit']=$listCadPriceUnit1;
 $arrayList['listCadPesoPeca']=$listCadPesoPeca;
-
+var_dump($arrayList);
 $objList->createListCad($arrayList);
-echo "<script>
-    window.location.href='".DIRPAGE."admin/lista';
-</script>";
+//echo "<script>
+ //    window.location.href='".DIRPAGE."admin/lista';
+//</script>";

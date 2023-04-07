@@ -86,7 +86,7 @@ class ClassList extends ClassCrud
     {
         $this->insertDB(
             "sis_lista",
-            "?,?,?,?,?,?,?,?,?",
+            "?,?,?,?,?,?,?,?,?,?,?",
             array(
                 0,
                 $arrayList['startdata'],
@@ -97,8 +97,8 @@ class ClassList extends ClassCrud
                 $arrayList['lisCadProduto'],
                 $arrayList['listCadStatus'],
                 $arrayList['listCadCategoria'],
-                $arrayList['listCadPesoPeca'],
-                $arrayList['listCadPriceUnit']
+                $arrayList['listCadPriceUnit'],
+                $arrayList['listCadPesoPeca']
             )
         );
     }
