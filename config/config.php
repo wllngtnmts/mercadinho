@@ -19,12 +19,6 @@ define('DB','sistemasesoftware');
 define('USER','sistemasesoftwa');
 define('PASS','vl.15x@9sJ-s%sTv.Da');
 
-#ServiçoBancoDeDadosLocal
-/*define('HOST','mysql1.sistemasesoftware.com.br');
-define('DB','sistemasesoftware3');
-define('USER','sistemasesoftwa3');
-define('PASS','vl.15x@9sJ-s%sTv.Da');*/
-
 #Informações do servidor de e-mail
 define("HOSTMAIL",'smtp.sistemasesoftware.com.br');
 define("USERMAIL",'suporte=sistemasesoftware.com.br');

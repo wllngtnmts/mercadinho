@@ -3,7 +3,7 @@
 
     <form name="formCadastroRet" id="formCadastroRet" action="<?php echo DIRPAGE.'controllers/controllerPerm'; ?>" method="post">
         <div class="cadastroRetPopup popupPermition">
-            <input type="text" name="id2" id="id2">
+            <input type="hidden" name="id2" id="id2">
             <select name="newPermition" id="newPermition">
                 <option value="">Selecione</option>
                 <option value="admin">ADMIN</option>

@@ -46,7 +46,7 @@ class ClassLayout
         $html.="<script src='".DIRPAGE."lib/js/vanilla-masker.min.js'></script>\n";
         $html.="<script src='https://www.google.com/recaptcha/api.js?render=".SITEKEY."'></script>\n";
         $html.="<script src='".DIRPAGE."lib/js/javascript.min.js?v=61'></script>\n";
-        $html.="<script src='".DIRPAGE."lib/js/popup-list.js?v=40'></script>\n";
+        $html.="<script src='".DIRPAGE."lib/js/popup-list.js?v=42'></script>\n";
         $html.="</body>\n";
         $html.="</html>";
         echo$html;
